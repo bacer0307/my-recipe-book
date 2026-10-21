@@ -20,7 +20,7 @@ const SUPABASE_URL='https://bysswjjserhznmrbevph.supabase.co';
 const SUPABASE_KEY='sb_publishable_hCS3EhGtIDKeBTYdcoYDzQ_mMZBFjJH';
 const TABLE='recipes';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-const CATS=[{name:'朝',image:'icon/asa.png'},{name:'昼',image:'icon/hiru.png'},{name:'晩',image:'icon/ban.png'},{name:'デザート',image:'icon/dessert.png'},{name:'お弁当',image:'icon/bento.png'},{name:'1品もの',image:'icon/side.png'},{name:'冷凍保存可能',image:'icon/frozen.png'}];
+const CATS=[{name:'朝',image:'icon/asa.png'},{name:'昼',image:'icon/hiru.png'},{name:'晩',image:'icon/ban.png'},{name:'デザート',image:'icon/dessert.png'},{name:'お弁当',image:'icon/bento.png'},{name:'1品もの',image:'icon/side.png'},{name:'冷凍保存可能',image:'icon/frozen.png'},{name:'ドレッシング・タレ',image:'icon/dressing.png'}];
 const NAMES=CATS.map(c=>c.name);
 const PREFIX='分類:';
 let user=null,recipes=[],page={kind:'home'},imageValue='',busy=false;
